@@ -4,9 +4,10 @@ const cors = require('cors');
 const knex = require('knex');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const knexConfig = require('./knexfile').development;
+const knexConfig = require('./knexfile');
 
-const db = knex(knexConfig);
+const env = process.env.NODE_ENV === 'production' ? 'production' : 'development';
+const db = knex(knexConfig[env]);
 const app = express();
 
 app.use(cors());
