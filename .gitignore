@@ -31,3 +31,28 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Production / Build
+dist/
+client/dist/
+server/dist/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Tool caches
+.eslintcache
+.parcel-cache
+.turbo/
+
