@@ -1,8 +1,5 @@
 {
-  "buildCommand": "npm install --prefix client && npm run build --prefix client",
-  "outputDirectory": "client/dist",
-  "installCommand": "echo 'skip root install'",
-  "framework": null,
+  "rootDirectory": "client",
   "rewrites": [
     {
       "source": "/(.*)",
